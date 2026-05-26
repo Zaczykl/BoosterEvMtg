@@ -1,0 +1,60 @@
+{
+  "code": "mid-draft",
+  "scryfall_query": "set:mid",
+  "name": "Innistrad: Midnight Hunt",
+  "type": "draft",
+  "subtitle": "Draft Booster",
+  "filters": {
+    "exclude_digital": true,
+    "exclude_promos": ["alchemy","rebalanced","promopack","buyabox","bundle"],
+    "exclude_effects": ["extendedart"],
+    "allowed_layouts": ["normal","transform"]
+  },
+  "pools": {
+    "land_eternal":      { "color": "#a0b8d0", "is_basic_land": true,  "full_art": true,  "finishes": "nonfoil", "set": "mid", "cn_min": 268, "cn_max": 277 },
+    "common_black":      { "color": "#807888", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 1,   "cn_max": 267 },
+    "showcase_common":   { "color": "#90b8a0", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 286, "cn_max": 325 },
+    "uncommon_black":    { "color": "#b0c0b0", "rarity": "uncommon", "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 1,   "cn_max": 267 },
+    "showcase_uncommon": { "color": "#a0c8a8", "rarity": "uncommon", "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 286, "cn_max": 325 },
+    "rare_black":        { "color": "#6090d8", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 1,   "cn_max": 267 },
+    "showcase_rare":     { "color": "#70a8e0", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 286, "cn_max": 325 },
+    "borderless_rare":   { "color": "#a0c8ff", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 278, "cn_max": 285 },
+    "mythic_black":      { "color": "#e07830", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 1,   "cn_max": 267 },
+    "showcase_mythic":   { "color": "#e89040", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 286, "cn_max": 325 },
+    "borderless_mythic": { "color": "#ffb06a", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "is_basic_land": false, "set": "mid", "cn_min": 278, "cn_max": 285 }
+  },
+  "structure": [
+    { "slot": "land",      "label": "Eternal Night Land" },
+    { "slot": "rare",      "label": "Rare/Mythic Slot" },
+    { "slot": "uncommon1", "label": "Uncommon #1" },
+    { "slot": "uncommon2", "label": "Uncommon #2" },
+    { "slot": "uncommon3", "label": "Uncommon #3" },
+    { "slot": "common1",   "label": "Common #1" },
+    { "slot": "common2",   "label": "Common #2" },
+    { "slot": "common3",   "label": "Common #3" },
+    { "slot": "common4",   "label": "Common #4" },
+    { "slot": "common5",   "label": "Common #5" },
+    { "slot": "common6",   "label": "Common #6" },
+    { "slot": "common7",   "label": "Common #7" },
+    { "slot": "common8",   "label": "Common #8" },
+    { "slot": "common9",   "label": "Common #9" },
+    { "slot": "common10",  "label": "Common #10" }
+  ],
+  "slots": {
+    "land":      { "distribution": { "land_eternal": 1.0 } },
+    "rare":      { "distribution": { "rare_black": 0.805000, "mythic_black": 0.115000, "showcase_rare": 0.060800, "borderless_rare": 0.016000, "showcase_mythic": 0.001829, "borderless_mythic": 0.001371 } },
+    "uncommon1": { "distribution": { "uncommon_black": 0.899000, "showcase_uncommon": 0.101000 } },
+    "uncommon2": { "distribution": { "uncommon_black": 0.899000, "showcase_uncommon": 0.101000 } },
+    "uncommon3": { "distribution": { "uncommon_black": 0.899000, "showcase_uncommon": 0.101000 } },
+    "common1":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common2":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common3":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common4":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common5":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common6":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common7":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common8":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common9":   { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } },
+    "common10":  { "distribution": { "common_black": 0.939655, "showcase_common": 0.060345 } }
+  }
+}

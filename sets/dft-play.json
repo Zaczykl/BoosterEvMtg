@@ -1,0 +1,60 @@
+{
+  "code": "dft-play",
+  "scryfall_query": "set:dft",
+  "extra_queries": ["set:spg cn>=84 cn<=103"],
+  "name": "Aetherdrift",
+  "type": "play",
+  "subtitle": "Play Booster",
+  "filters": {
+    "exclude_digital": false,
+    "exclude_promos": ["buyabox","bundle","promopack","firstplacefoil","boxtopper","japanshowcase","fracturefoil","serialized","headliner","rainbowfoil"],
+    "exclude_effects": ["extendedart","showcase"],
+    "allowed_layouts": ["normal"]
+  },
+  "pools": {
+    "land_dual":           { "color": "#607860", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "dft", "cn_min": 249, "cn_max": 271 },
+    "land_normal":         { "color": "#607060", "is_basic_land": true, "full_art": false, "finishes": "nonfoil", "set": "dft", "cn_min": 277, "cn_max": 291 },
+    "land_fullart":        { "color": "#80a080", "is_basic_land": true, "full_art": true,  "finishes": "nonfoil", "set": "dft", "cn_min": 272, "cn_max": 276 },
+    "common_black":        { "color": "#807888", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "dft", "cn_min": 1,   "cn_max": 248 },
+    "uncommon_black":      { "color": "#b0c0b0", "rarity": "uncommon", "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "dft", "cn_min": 1,   "cn_max": 291 },
+    "rare_black":          { "color": "#6090d8", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "dft", "cn_min": 1,   "cn_max": 291 },
+    "mythic_black":        { "color": "#e07830", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "dft", "cn_min": 1,   "cn_max": 291 },
+    "borderless_common":   { "color": "#90b8d0", "rarity": "common",   "border_color": "borderless", "finishes": "nonfoil", "set": "dft", "cn_min": 292, "cn_max": 375 },
+    "borderless_uncommon": { "color": "#a0c8c0", "rarity": "uncommon", "border_color": "borderless", "finishes": "nonfoil", "set": "dft", "cn_min": 292, "cn_max": 375 },
+    "borderless_rare":     { "color": "#70b8e8", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "dft", "cn_min": 292, "cn_max": 375 },
+    "borderless_mythic":   { "color": "#f0a040", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "dft", "cn_min": 292, "cn_max": 375 },
+    "spg":                 { "color": "#d0a0e0", "border_color": "borderless", "finishes": "nonfoil", "set": "spg", "cn_min": 84, "cn_max": 103 }
+  },
+  "structure": [
+    { "slot": "land",      "label": "Land Slot" },
+    { "slot": "foil",      "label": "Foil Slot" },
+    { "slot": "rare",      "label": "Rare/Mythic Slot" },
+    { "slot": "wildcard",  "label": "Wildcard" },
+    { "slot": "uncommon1", "label": "Uncommon #1" },
+    { "slot": "uncommon2", "label": "Uncommon #2" },
+    { "slot": "uncommon3", "label": "Uncommon #3" },
+    { "slot": "spg",       "label": "SPG / Common #1" },
+    { "slot": "common1",   "label": "Common #2" },
+    { "slot": "common2",   "label": "Common #3" },
+    { "slot": "common3",   "label": "Common #4" },
+    { "slot": "common4",   "label": "Common #5" },
+    { "slot": "common5",   "label": "Common #6" },
+    { "slot": "common6",   "label": "Common #7" }
+  ],
+  "slots": {
+    "land":      { "distribution": { "land_dual": 0.500, "land_normal": 0.375, "land_fullart": 0.125 } },
+    "foil":      { "distribution": { "common_black": 0.605, "uncommon_black": 0.300, "rare_black": 0.064, "mythic_black": 0.011, "borderless_common": 0.005, "borderless_uncommon": 0.005, "borderless_rare": 0.009, "borderless_mythic": 0.001 } },
+    "rare":      { "distribution": { "rare_black": 0.780, "mythic_black": 0.130, "borderless_rare": 0.080, "borderless_mythic": 0.010 } },
+    "wildcard":  { "distribution": { "common_black": 0.083000, "uncommon_black": 0.626000, "rare_black": 0.162240, "mythic_black": 0.027040, "borderless_rare": 0.016640, "borderless_mythic": 0.002080, "borderless_common": 0.028731, "borderless_uncommon": 0.054269 } },
+    "uncommon1": { "distribution": { "uncommon_black": 1.0 } },
+    "uncommon2": { "distribution": { "uncommon_black": 1.0 } },
+    "uncommon3": { "distribution": { "uncommon_black": 1.0 } },
+    "spg":       { "distribution": { "common_black": 0.985, "spg": 0.015 } },
+    "common1":   { "distribution": { "common_black": 1.0 } },
+    "common2":   { "distribution": { "common_black": 1.0 } },
+    "common3":   { "distribution": { "common_black": 1.0 } },
+    "common4":   { "distribution": { "common_black": 1.0 } },
+    "common5":   { "distribution": { "common_black": 1.0 } },
+    "common6":   { "distribution": { "common_black": 1.0 } }
+  }
+}

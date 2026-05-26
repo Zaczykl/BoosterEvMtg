@@ -1,0 +1,62 @@
+{
+  "code": "spm-play",
+  "scryfall_query": "set:spm",
+  "name": "Magic: The Gathering | Marvel's Spider-Man",
+  "type": "play",
+  "subtitle": "Play Booster",
+  "filters": {
+    "exclude_digital": false,
+    "exclude_promos": ["buyabox","bundle","headliner"],
+    "exclude_effects": [],
+    "allowed_layouts": ["normal","modal_dfc","saga"]
+  },
+  "pools": {
+    "land_normal":        { "color": "#607060", "is_basic_land": true,  "full_art": false, "finishes": "nonfoil", "set": "spm", "cn_min": 194, "cn_max": 198 },
+    "land_fullart":       { "color": "#80a080", "is_basic_land": true,  "full_art": true,  "finishes": "nonfoil", "set": "spm", "cn_min": 189, "cn_max": 193 },
+    "common_black":       { "color": "#807888", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "spm", "cn_min": 1,   "cn_max": 188 },
+    "uncommon_black":     { "color": "#b0c0b0", "rarity": "uncommon", "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "spm", "cn_min": 1,   "cn_max": 188 },
+    "rare_black":         { "color": "#6090d8", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "spm", "cn_min": 1,   "cn_max": 188 },
+    "mythic_black":       { "color": "#e07830", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "spm", "cn_min": 1,   "cn_max": 188 },
+    "webslinger_uncommon":{ "color": "#c0d8f0", "rarity": "uncommon", "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 199, "cn_max": 207 },
+    "webslinger_rare":    { "color": "#90c0e8", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 199, "cn_max": 207 },
+    "webslinger_mythic":  { "color": "#e8a860", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 199, "cn_max": 207 },
+    "panel_rare":         { "color": "#70a8e0", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 208, "cn_max": 231 },
+    "panel_mythic":       { "color": "#f09840", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 208, "cn_max": 231 },
+    "headliner_rare":     { "color": "#a0c8ff", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 232, "cn_max": 243 },
+    "headliner_mythic":   { "color": "#ffb06a", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "spm", "cn_min": 232, "cn_max": 243 },
+    "extendedart_rare":   { "color": "#80b0d0", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "set": "spm", "cn_min": 244, "cn_max": 283 },
+    "extendedart_mythic": { "color": "#d89050", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "set": "spm", "cn_min": 244, "cn_max": 283 }
+  },
+  "structure": [
+    { "slot": "land",      "label": "Basic Land" },
+    { "slot": "wildcard",  "label": "Wildcard" },
+    { "slot": "rare",      "label": "Rare/Mythic Slot" },
+    { "slot": "nonbasic",  "label": "Nonbasic Land / Any" },
+    { "slot": "uncommon1", "label": "Uncommon #1" },
+    { "slot": "uncommon2", "label": "Uncommon #2" },
+    { "slot": "uncommon3", "label": "Uncommon #3" },
+    { "slot": "common1",   "label": "Common #1" },
+    { "slot": "common2",   "label": "Common #2" },
+    { "slot": "common3",   "label": "Common #3" },
+    { "slot": "common4",   "label": "Common #4" },
+    { "slot": "common5",   "label": "Common #5" },
+    { "slot": "common6",   "label": "Common #6" },
+    { "slot": "last",      "label": "Common / Borderless" }
+  ],
+  "slots": {
+    "land":      { "distribution": { "land_normal": 0.5, "land_fullart": 0.5 } },
+    "wildcard":  { "distribution": { "common_black": 0.708000, "uncommon_black": 0.041000, "rare_black": 0.209000, "mythic_black": 0.029000, "webslinger_uncommon": 0.002786, "webslinger_rare": 0.006964, "webslinger_mythic": 0.003250 } },
+    "rare":      { "distribution": { "rare_black": 0.837000, "mythic_black": 0.117000, "extendedart_rare": 0.019974, "extendedart_mythic": 0.004237, "panel_rare": 0.010289, "panel_mythic": 0.004237, "headliner_rare": 0.004237, "headliner_mythic": 0.003026 } },
+    "nonbasic":  { "distribution": { "common_black": 0.774485, "uncommon_black": 0.036939, "rare_black": 0.181450, "mythic_black": 0.007126 } },
+    "uncommon1": { "distribution": { "uncommon_black": 0.948276, "webslinger_uncommon": 0.051724 } },
+    "uncommon2": { "distribution": { "uncommon_black": 0.948276, "webslinger_uncommon": 0.051724 } },
+    "uncommon3": { "distribution": { "uncommon_black": 0.948276, "webslinger_uncommon": 0.051724 } },
+    "common1":   { "distribution": { "common_black": 1.0 } },
+    "common2":   { "distribution": { "common_black": 1.0 } },
+    "common3":   { "distribution": { "common_black": 1.0 } },
+    "common4":   { "distribution": { "common_black": 1.0 } },
+    "common5":   { "distribution": { "common_black": 1.0 } },
+    "common6":   { "distribution": { "common_black": 1.0 } },
+    "last":      { "distribution": { "common_black": 0.950000, "webslinger_uncommon": 0.003333, "webslinger_rare": 0.004444, "webslinger_mythic": 0.002222, "panel_rare": 0.018889, "panel_mythic": 0.007778, "headliner_rare": 0.007778, "headliner_mythic": 0.005556 } }
+  }
+}
