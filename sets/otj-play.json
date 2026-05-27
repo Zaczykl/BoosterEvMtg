@@ -1,0 +1,76 @@
+{
+  "code": "otj-play",
+  "scryfall_query": "set:otj",
+  "extra_queries": [
+    "set:otp cn>=1 cn<=65",
+    "set:big cn>=1 cn<=30",
+    "set:spg cn>=29 cn<=38"
+  ],
+  "name": "Outlaws of Thunder Junction",
+  "type": "play",
+  "subtitle": "Play Booster",
+  "filters": {
+    "exclude_digital": false,
+    "exclude_promos": ["buyabox","bundle","promopack","serialized","doublerainbow"],
+    "exclude_effects": ["extendedart"],
+    "allowed_layouts": ["normal","split"]
+  },
+  "pools": {
+    "land_dual":        { "color": "#607860", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "otj", "cn_min": 251, "cn_max": 265 },
+    "land_normal":      { "color": "#607060", "is_basic_land": true, "full_art": false, "finishes": "nonfoil", "set": "otj", "cn_min": 277, "cn_max": 286 },
+    "land_western":     { "color": "#80a080", "is_basic_land": true, "full_art": true,  "finishes": "nonfoil", "set": "otj", "cn_min": 272, "cn_max": 276 },
+    "common_black":     { "color": "#807888", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "otj", "cn_min": 1,   "cn_max": 250 },
+    "uncommon_black":   { "color": "#b0c0b0", "rarity": "uncommon", "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "otj", "cn_min": 1,   "cn_max": 270 },
+    "rare_black":       { "color": "#6090d8", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "otj", "cn_min": 1,   "cn_max": 265 },
+    "mythic_black":     { "color": "#e07830", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "otj", "cn_min": 1,   "cn_max": 270 },
+    "rare_dual":        { "color": "#5878a8", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "otj", "cn_min": 266, "cn_max": 270 },
+    "wanted_rare":      { "color": "#a08060", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "otj", "cn_min": 287, "cn_max": 299 },
+    "wanted_mythic":    { "color": "#c09050", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "otj", "cn_min": 287, "cn_max": 299 },
+    "borderless_rare":  { "color": "#70b8e8", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "otj", "cn_min": 300, "cn_max": 306 },
+    "borderless_mythic":{ "color": "#f0a040", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "otj", "cn_min": 300, "cn_max": 306 },
+    "otp_uncommon":     { "color": "#b8c8b0", "rarity": "uncommon", "border_color": "borderless", "finishes": "nonfoil", "set": "otp", "cn_min": 1, "cn_max": 65 },
+    "otp_rare":         { "color": "#78b0d0", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "otp", "cn_min": 1, "cn_max": 65 },
+    "otp_mythic":       { "color": "#e8a050", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "otp", "cn_min": 1, "cn_max": 65 },
+    "big_list":         { "color": "#d0c080", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "set": "big", "cn_min": 1, "cn_max": 30 },
+    "spg":              { "color": "#d0a0e0", "border_color": "borderless", "finishes": "nonfoil", "set": "spg", "cn_min": 29, "cn_max": 38 }
+  },
+  "structure": [
+    { "slot": "land",      "label": "Land Slot" },
+    { "slot": "foil",      "label": "Foil Slot" },
+    { "slot": "rare",      "label": "Rare/Mythic Slot" },
+    { "slot": "otp",       "label": "Breaking News (OTP)" },
+    { "slot": "wildcard",  "label": "Wildcard" },
+    { "slot": "uncommon1", "label": "Uncommon #1" },
+    { "slot": "uncommon2", "label": "Uncommon #2" },
+    { "slot": "uncommon3", "label": "Uncommon #3" },
+    { "slot": "list",      "label": "BIG/SPG / Common #1" },
+    { "slot": "common1",   "label": "Common #2" },
+    { "slot": "common2",   "label": "Common #3" },
+    { "slot": "common3",   "label": "Common #4" },
+    { "slot": "common4",   "label": "Common #5" },
+    { "slot": "common5",   "label": "Common #6" }
+  ],
+  "slots": {
+    "land":      { "distribution": { "land_dual": 0.500000, "land_western": 0.166667, "land_normal": 0.333333 } },
+    "foil":      { "distribution": { "common_black": 0.590, "uncommon_black": 0.290, "rare_black": 0.060, "mythic_black": 0.010, "rare_dual": 0.020, "wanted_rare": 0.010, "wanted_mythic": 0.010, "otp_rare": 0.005, "otp_mythic": 0.005 } },
+    "rare":      { "distribution": { "rare_black": 0.731250, "mythic_black": 0.243750, "wanted_rare": 0.008621, "wanted_mythic": 0.012931, "borderless_mythic": 0.003448 } },
+    "otp":       { "distribution": { "otp_uncommon": 0.666667, "otp_rare": 0.222222, "otp_mythic": 0.111111 } },
+   "wildcard": { "distribution": {
+  "uncommon_black": 0.650044,
+  "rare_dual":      0.145810,
+  "common_black":   0.100007,
+  "rare_black":     0.062504,
+  "mythic_black":   0.020834,
+  "borderless_rare":0.020801
+} },
+    "uncommon1": { "distribution": { "uncommon_black": 1.0 } },
+    "uncommon2": { "distribution": { "uncommon_black": 1.0 } },
+    "uncommon3": { "distribution": { "uncommon_black": 1.0 } },
+    "list":      { "distribution": { "common_black": 0.800000, "big_list": 0.184375, "spg": 0.015625 } },
+    "common1":   { "distribution": { "common_black": 1.0 } },
+    "common2":   { "distribution": { "common_black": 1.0 } },
+    "common3":   { "distribution": { "common_black": 1.0 } },
+    "common4":   { "distribution": { "common_black": 1.0 } },
+    "common5":   { "distribution": { "common_black": 1.0 } }
+  }
+}

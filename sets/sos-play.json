@@ -1,0 +1,66 @@
+{
+  "code": "sos-play",
+  "scryfall_query": "set:sos",
+  "extra_queries": [
+    "set:soa cn>=1 cn<=65",
+    "set:spg cn>=149 cn<=158"
+  ],
+  "name": "Secrets of Strixhaven",
+  "type": "play",
+  "subtitle": "Play Booster",
+  "filters": {
+    "exclude_digital": true,
+    "exclude_promos": ["buyabox","bundle","promopack","serialized","headliner","rainbowfoil"],
+    "exclude_effects": ["extendedart"],
+    "allowed_layouts": ["normal","prepare"]
+  },
+  "pools": {
+    "land_dual":          { "color": "#607860", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "sos", "cn_min": 253, "cn_max": 266 },
+    "land_normal":        { "color": "#607060", "is_basic_land": true, "full_art": false, "finishes": "nonfoil", "set": "sos", "cn_min": 272, "cn_max": 281 },
+    "land_spellcraft":    { "color": "#80a080", "is_basic_land": true, "full_art": true,  "finishes": "nonfoil", "set": "sos", "cn_min": 267, "cn_max": 271 },
+    "common_black":       { "color": "#807888", "rarity": "common",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "sos", "cn_min": 1,   "cn_max": 252 },
+    "uncommon_black":     { "color": "#b0c0b0", "rarity": "uncommon", "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "sos", "cn_min": 1,   "cn_max": 266 },
+    "rare_black":         { "color": "#6090d8", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "sos", "cn_min": 1,   "cn_max": 266 },
+    "mythic_black":       { "color": "#e07830", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "sos", "cn_min": 1,   "cn_max": 266 },
+    "borderless_mythic":  { "color": "#f0a040", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "sos", "cn_min": 282, "cn_max": 288 },
+    "field_notes_rare":   { "color": "#78b0d0", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "sos", "cn_min": 289, "cn_max": 305 },
+    "field_notes_mythic": { "color": "#e8a050", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "sos", "cn_min": 289, "cn_max": 305 },
+    "dual_borderless":    { "color": "#90b8e0", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "sos", "cn_min": 301, "cn_max": 305 },
+    "soa_uncommon":       { "color": "#b8c8b0", "rarity": "uncommon", "border_color": "borderless", "finishes": "nonfoil", "set": "soa", "cn_min": 1,  "cn_max": 65 },
+    "soa_rare":           { "color": "#78b0c8", "rarity": "rare",     "border_color": "borderless", "finishes": "nonfoil", "set": "soa", "cn_min": 1,  "cn_max": 65 },
+    "soa_mythic":         { "color": "#e8a868", "rarity": "mythic",   "border_color": "borderless", "finishes": "nonfoil", "set": "soa", "cn_min": 1,  "cn_max": 65 },
+    "spg":                { "color": "#d0a0e0", "border_color": "borderless", "finishes": "nonfoil", "set": "spg", "cn_min": 149, "cn_max": 158 }
+  },
+  "structure": [
+    { "slot": "land",      "label": "Land Slot" },
+    { "slot": "foil",      "label": "Foil Slot" },
+    { "slot": "rare",      "label": "Rare/Mythic Slot" },
+    { "slot": "soa",       "label": "Mystical Archive (SOA)" },
+    { "slot": "wildcard",  "label": "Wildcard" },
+    { "slot": "uncommon1", "label": "Uncommon #1" },
+    { "slot": "uncommon2", "label": "Uncommon #2" },
+    { "slot": "uncommon3", "label": "Uncommon #3" },
+    { "slot": "spg",       "label": "SPG / Common #1" },
+    { "slot": "common1",   "label": "Common #2" },
+    { "slot": "common2",   "label": "Common #3" },
+    { "slot": "common3",   "label": "Common #4" },
+    { "slot": "common4",   "label": "Common #5" },
+    { "slot": "common5",   "label": "Common #6" }
+  ],
+  "slots": {
+    "land":      { "distribution": { "land_dual": 0.500000, "land_spellcraft": 0.166250, "land_normal": 0.333750 } },
+    "foil":      { "distribution": { "common_black": 0.544, "uncommon_black": 0.336, "rare_black": 0.067, "mythic_black": 0.011, "borderless_mythic": 0.007, "field_notes_rare": 0.006, "field_notes_mythic": 0.003, "soa_uncommon": 0.020, "soa_rare": 0.003, "soa_mythic": 0.003 } },
+    "rare":      { "distribution": { "rare_black": 0.825, "mythic_black": 0.141, "borderless_mythic": 0.016, "field_notes_rare": 0.012, "field_notes_mythic": 0.006 } },
+    "soa":       { "distribution": { "soa_uncommon": 0.875, "soa_rare": 0.096, "soa_mythic": 0.029 } },
+    "wildcard":  { "distribution": { "common_black": 0.391, "uncommon_black": 0.391, "rare_black": 0.195, "mythic_black": 0.019, "borderless_mythic": 0.002, "field_notes_rare": 0.002 } },
+    "uncommon1": { "distribution": { "uncommon_black": 1.0 } },
+    "uncommon2": { "distribution": { "uncommon_black": 1.0 } },
+    "uncommon3": { "distribution": { "uncommon_black": 1.0 } },
+    "spg":       { "distribution": { "common_black": 0.981800, "spg": 0.018200 } },
+    "common1":   { "distribution": { "common_black": 1.0 } },
+    "common2":   { "distribution": { "common_black": 1.0 } },
+    "common3":   { "distribution": { "common_black": 1.0 } },
+    "common4":   { "distribution": { "common_black": 1.0 } },
+    "common5":   { "distribution": { "common_black": 1.0 } }
+  }
+}

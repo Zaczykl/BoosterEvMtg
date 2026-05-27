@@ -57,6 +57,13 @@
     "common4":   { "distribution": { "common_black": 1.0 } },
     "common5":   { "distribution": { "common_black": 1.0 } },
     "common6":   { "distribution": { "common_black": 1.0 } },
-    "last":      { "distribution": { "common_black": 0.950000, "webslinger_uncommon": 0.003333, "webslinger_rare": 0.004444, "webslinger_mythic": 0.002222, "panel_rare": 0.018889, "panel_mythic": 0.007778, "headliner_rare": 0.007778, "headliner_mythic": 0.005556 } }
+    "last": { "distribution": {
+  "common_black":       0.963334,
+  "webslinger_uncommon":0.003333,
+  "webslinger_rare":    0.004444,
+  "webslinger_mythic":  0.002222,
+  "panel_rare":         0.018889,
+  "panel_mythic":       0.007778
+} }
   }
 }

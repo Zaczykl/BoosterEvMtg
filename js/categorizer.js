@@ -77,10 +77,11 @@ export class CardCategorizer {
     return true;
   }
 
-  matchesRarity(card, rules) {
-    if (!rules.rarity) return true;
-    return card.rarity === rules.rarity;
-  }
+matchesRarity(card, rules) {
+  if (!rules.rarity && !rules.rarity_in) return true;
+  if (rules.rarity_in) return rules.rarity_in.includes(card.rarity);
+  return card.rarity === rules.rarity;
+}
 
   matchesBorderColor(card, rules) {
     if (!rules.border_color) return true;

@@ -23,7 +23,7 @@ class BoosterEVApp {
   }
 
   async loadAvailableSets() {
-    const setFiles = ['bro-draft', 'snc-draft', 'mid-draft', 'spm-play', 'dft-play', 'dsk-play', 'mkm-play','otj-play'];
+    const setFiles = ['bro-draft', 'snc-draft', 'mid-draft', 'spm-play', 'dft-play', 'dsk-play', 'mkm-play','otj-play','sos-play'];
     for (const code of setFiles) {
       try {
         const response = await fetch(`sets/${code}.json`);

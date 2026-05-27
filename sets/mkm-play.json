@@ -36,8 +36,8 @@
     "dossier_rare":       { "color": "#78b0d0", "rarity": "rare",     "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mkm", "cn_min": 336, "cn_max": 376 },
     "dossier_mythic":     { "color": "#e8a050", "rarity": "mythic",   "border_color": "black",      "finishes": "nonfoil", "is_basic_land": false, "set": "mkm", "cn_min": 336, "cn_max": 376 },
     "spg":                { "color": "#d0a0e0", "border_color": "borderless", "finishes": "nonfoil", "set": "spg", "cn_min": 19, "cn_max": 28 },
-    "list_cu":            { "color": "#c0b090", "finishes": "nonfoil", "set": "plst" },
-    "list_rm":            { "color": "#d0c070", "finishes": "nonfoil", "set": "plst" }
+    "list_cu": { "color": "#c0b090", "finishes": "nonfoil", "set": "plst", "rarity_in": ["common","uncommon"] },
+"list_rm": { "color": "#d0c070", "finishes": "nonfoil", "set": "plst", "rarity_in": ["rare","mythic"] }
   },
   "structure": [
     { "slot": "land",      "label": "Land Slot" },
